@@ -321,10 +321,11 @@
             </div>
         </div>
     </footer>
+    <!--------------------------Модалка----------------------------->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-btn" data-modal-close><svg class="btn-icon" width="30" height="30">
-                    <use href="./image/icon.svg#icon-close-3"></use>
+            <button class="modal-close-btn" data-modal-close><svg class="btn-close-icon" width="18" height="18">
+                    <use href="./image/icon.svg#icon-close2"></use>
                 </svg></button>
             <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
             <form>
@@ -332,7 +333,7 @@
                     <label for="text-name" class="label-input">Имя</label>
                     <div class="form-input">
                         <input type="text" name="name" class="modal-input" id="text-name">
-                        <svg class="form-icon" width="18" height="18">
+                        <svg class="input-icon" width="18" height="18">
                             <use href="./image/icon.svg#icon-personb">
                             </use>
                         </svg>
@@ -343,7 +344,7 @@
                     <label for="tel" class="label-input">Телефон</label>
                     <div class="form-input">
                         <input type="tel" name="tel" class="modal-input" id="tel">
-                        <svg class="form-icon" width="18" height="18">
+                        <svg class="input-icon" width="18" height="18">
                             <use href="./image/icon.svg#icon-phoneb">
                             </use>
                         </svg>
@@ -353,18 +354,27 @@
                     <label for="email" class="label-input">Почта</label>
                     <div class="form-input">
                         <input type="email" name="email" class="modal-input" id="email">
-                        <svg class="form-icon" width="18" height="18">
+                        <svg class="input-icon" width="18" height="18">
                             <use href="./image/icon.svg#icon-emailb">
                             </use>
                         </svg>
                     </div>
                 </div>
+                <div class="coments">
                 <label for="textarea" class="label-input">Комментарий</label>
-                <textarea name="coments" class="modal-textarea" id="textarea" placeholder="Введите текст"></textarea>
-
-                <input type="checkbox" id="conditions" name="conditions" value="conditions" class="conditions">
-                <label for="conditions" class="conditions-label">Соглашаюсь с рассылкой и принимаю <a href=""
-                        class="conditions-link">Условия договора</a> </label>
+                <textarea name="coments" class="form-textarea" id="textarea" placeholder="Введите текст"></textarea>
+                    </div>
+                 <div class="conditions">
+                <input type="checkbox" id="conditions" name="conditions" value="conditions" class="conditions-input">
+                <label for="conditions" class="conditions-label"><svg class="check" width="16" height="15">
+                <use href="./image/icon.svg#icon-check-on">
+                </use>
+                </svg><svg class="check-off check" width="16" height="15">
+                    <use href="./image/icon.svg#icon-check-off">
+                    </use>
+                </svg>
+                Соглашаюсь с рассылкой и принимаю <a href=""
+                        class="conditions-link">Условия договора</a> </label></div>
                 <button type="submit" class="send-btn btn">Отправить</button>
             </form>
         </div>
