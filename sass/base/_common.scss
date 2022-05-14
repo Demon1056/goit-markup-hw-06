@@ -1,0 +1,17 @@
+body {
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+}
+
+
+.container {
+    width: 1200px;
+    padding-left: var(--main-container-padding);
+    padding-right: var(--main-container-padding);
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: var(--main-section-padding);
+    padding-bottom: var(--main-section-padding);
+}
